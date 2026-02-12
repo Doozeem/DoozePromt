@@ -1,0 +1,5 @@
+{
+  "name": "Dooze Analis Prompt",
+  "description": "An intelligent tool that analyzes video footage to generate highly detailed, reverse-engineered prompts suitable for generative AI video models.",
+  "requestFramePermissions": []
+}

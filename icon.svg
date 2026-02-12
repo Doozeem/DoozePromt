@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <defs>
+    <linearGradient id="lime_grad" x1="0" y1="512" x2="512" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#65a30d" /> <!-- Lime 600 -->
+      <stop offset="0.5" stop-color="#84cc16" /> <!-- Lime 500 -->
+      <stop offset="1" stop-color="#bef264" /> <!-- Lime 300 -->
+    </linearGradient>
+    <filter id="inner-glow">
+      <feFlood flood-color="#ffffff" flood-opacity="0.2"/>
+      <feComposite in2="SourceAlpha" operator="in"/>
+      <feGaussianBlur stdDeviation="10"/>
+      <feComposite in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1"/>
+      <feComposite in2="SourceAlpha" operator="in"/>
+      <feMerge>
+        <feMergeNode in="SourceGraphic"/>
+        <feMergeNode/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background: Smooth Rounded Squircle with Gradient -->
+  <rect x="0" y="0" width="512" height="512" rx="128" fill="url(#lime_grad)" />
+  
+  <!-- Subtle Shine Effect -->
+  <path d="M0 128C0 57.3 57.3 0 128 0H384C454.7 0 512 57.3 512 128V256C512 256 400 100 0 200V128Z" fill="white" fill-opacity="0.1"/>
+
+  <!-- Command Icon: Centered and Bold -->
+  <g transform="translate(86, 86) scale(14.16)">
+     <!-- Lucide Command Icon Geometry -->
+     <path d="M15 6v12a3 3 0 1 0 3-3H6a3 3 0 1 0 3 3V6a3 3 0 1 0-3 3h12a3 3 0 1 0-3-3" stroke="#050505" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+</svg>
